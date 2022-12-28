@@ -7,7 +7,7 @@ defmodule PayphoneWeb.PaymentView do
   end
 
   def render("show.json", %{payment: payment}) do
-    %{data: render_one(payment, PaymentView, "payment.json")}
+    payment
   end
 
   def render("payment.json", %{payment: payment}) do
