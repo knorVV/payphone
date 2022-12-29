@@ -5,7 +5,7 @@ defmodule Payphone.Payments.Payment do
   @required_fields [:payment_id, :amount]
 
   schema "payments" do
-    field :payment_id, :integer
+    field :payment_id, :string
     field :status, :integer
     field :amount, :integer
     field :tax, :integer

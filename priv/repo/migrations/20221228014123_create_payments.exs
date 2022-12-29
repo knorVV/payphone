@@ -3,7 +3,7 @@ defmodule Payphone.Repo.Migrations.CreatePayments do
 
   def change do
     create table(:payments) do
-      add :payment_id, :integer
+      add :payment_id, :string
       add :status, :integer
       add :amount, :integer
       add :tax, :integer
