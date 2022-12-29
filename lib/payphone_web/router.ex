@@ -7,6 +7,9 @@ defmodule PayphoneWeb.Router do
 
   scope "/api", PayphoneWeb do
     pipe_through :api
+
+    get "/response_handler", PaymentController, :handle_response
+    post "/payment", PaymentController, :create
   end
 
   # Enables LiveDashboard only for development

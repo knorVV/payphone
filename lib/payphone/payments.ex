@@ -101,4 +101,10 @@ defmodule Payphone.Payments do
   def change_payment(%Payment{} = payment, attrs \\ %{}) do
     Payment.changeset(payment, attrs)
   end
+
+  def get_payment_by_payment_id(payment_id) do
+    Payment
+    |> where([p], p.payment_id == ^payment_id)
+    |> Repo.one()
+  end
 end
