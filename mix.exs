@@ -24,7 +24,7 @@ defmodule Payphone.MixProject do
     ]
   end
 
-  # Specifies which paths to compile per environment. For test5
+  # Specifies which paths to compile per environment. For test6
   defp elixirc_paths(:test), do: ["lib", "test/support"]
   defp elixirc_paths(_), do: ["lib"]
 
