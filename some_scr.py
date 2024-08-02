@@ -1,2 +1,2 @@
 def scr():
-    return 1
+    return 2
