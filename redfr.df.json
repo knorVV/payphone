@@ -1,0 +1,157 @@
+{
+  "components": [
+    {
+      "config": {
+        "path": null,
+        "schema": null
+      },
+      "config_desc": {
+        "properties": {
+          "path": {
+            "description": "Путь к файлу с моделями данных",
+            "type": "string",
+            "x-expression": false,
+            "x-label": "Модель данных",
+            "x-order": 0,
+            "x-type": "FilePath.Structure"
+          },
+          "schema": {
+            "description": "Название схемы данных",
+            "type": "string",
+            "x-expression": false,
+            "x-label": "Схема",
+            "x-order": 1,
+            "x-type": "string"
+          }
+        },
+        "type": "object",
+        "x-type": "object",
+        "x-type-for-label": "Object"
+      },
+      "description": "<script>alert(\"жопа\");</script>",
+      "input_ports": {
+        "data": {
+          "data_structure_name": null,
+          "data_structures_path": null,
+          "data_structures_project_code": null,
+          "type": {
+            "additionalProperties": {
+              "nullable": true,
+              "x-expression": true,
+              "x-type": "any",
+              "x-type-for-label": "Any"
+            },
+            "properties": {},
+            "type": "object",
+            "x-expression": true,
+            "x-hidden": true,
+            "x-label": "Данные",
+            "x-order": 0,
+            "x-type": "object",
+            "x-type-for-label": "Object"
+          }
+        }
+      },
+      "inputs_config": {
+        "data": {
+          "status": "initial",
+          "value": null
+        }
+      },
+      "key": "f557b49f-737d-4ccc-8cee-0b698af174d9",
+      "loc": "712 300",
+      "output_ports": {
+        "data": {
+          "data_structure_name": null,
+          "data_structures_path": null,
+          "data_structures_project_code": "test_project",
+          "type": {
+            "additionalProperties": {
+              "nullable": true,
+              "x-expression": true,
+              "x-type": "any",
+              "x-type-for-label": "Any"
+            },
+            "properties": {},
+            "type": "object",
+            "x-data-structure-branch": "master",
+            "x-data-structures-project-code": "test_project",
+            "x-expression": true,
+            "x-hidden": true,
+            "x-label": "result",
+            "x-order": 0,
+            "x-type": "object",
+            "x-type-for-label": "Object"
+          }
+        },
+        "error": {
+          "data_structure_name": null,
+          "data_structures_path": null,
+          "data_structures_project_code": null,
+          "type": {
+            "description": "Выход в случае ошибки компонента",
+            "nullable": true,
+            "properties": {
+              "message": {
+                "type": "string",
+                "x-expression": true,
+                "x-type": "string",
+                "x-type-for-label": "String"
+              },
+              "stack_trace": {
+                "items": {
+                  "properties": {
+                    "bp_path": {
+                      "type": "string",
+                      "x-expression": true,
+                      "x-type": "string",
+                      "x-type-for-label": "String"
+                    },
+                    "key": {
+                      "type": "string",
+                      "x-expression": true,
+                      "x-type": "string",
+                      "x-type-for-label": "String"
+                    },
+                    "title": {
+                      "nullable": true,
+                      "type": "string",
+                      "x-expression": true,
+                      "x-type": "string",
+                      "x-type-for-label": "String"
+                    }
+                  },
+                  "type": "object",
+                  "x-expression": true,
+                  "x-type": "object",
+                  "x-type-for-label": "Object"
+                },
+                "type": "array",
+                "x-expression": true,
+                "x-type": "list",
+                "x-type-for-label": "List"
+              },
+              "type": {
+                "type": "string",
+                "x-expression": true,
+                "x-type": "string",
+                "x-type-for-label": "String"
+              }
+            },
+            "type": "object",
+            "x-expression": true,
+            "x-hidden": false,
+            "x-order": 1,
+            "x-type": "object",
+            "x-type-for-label": "Object"
+          }
+        }
+      },
+      "title": "Input",
+      "type": "Elixir.Df.Diagram.Components.Entrypoint.OpenAPI"
+    }
+  ],
+  "description": "<script>alert(\"жопа\");</script>",
+  "links": [],
+  "payload": null
+}
